@@ -6,7 +6,10 @@ on:
       - main
 
 jobs:
-  deploy:
+  # jobname
+  build-deploy:
+    # 수행 조건
+    # if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       # 1. GitHub 레포지토리 코드를 가져옴
